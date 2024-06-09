@@ -1,0 +1,122 @@
+body {
+  background-color: var(--bg-main);
+  color: var(--color-text);
+  font-family: Super Creamy;
+  min-height: 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px 2px #333;
+}
+.backButton {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.backButton i {
+  font-size: 3rem;
+}
+
+.backButton:hover {
+  transform: scale(1.2);
+}
+
+.lobby {
+  text-align: center;
+  background-color: var(--bg-question);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+.titleContainer h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.titleContainer h2 {
+  font-size: 2.5rem;
+  margin: 10px 0 30px;
+}
+
+.playersList {
+  margin: 20px 0;
+}
+
+.playersList h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.playersList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playersList li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--color-text);
+}
+
+.lobbyButtons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lobbyButtons a {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--color-text);
+  background-color: var(--bg-button);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.lobbyButtons a:hover {
+  background-color: var(--bg-button-hover);
+  color: var(--color-btn-hover);
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+  .titleContainer h1 {
+    font-size: 3rem;
+  }
+
+  .titleContainer h2 {
+    font-size: 1.5rem;
+  }
+
+  .playersList h3 {
+    font-size: 1.5rem;
+  }
+
+  .playersList li {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .lobbyButtons a {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

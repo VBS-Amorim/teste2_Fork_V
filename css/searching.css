@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Honey Crepes;
+    src: url(../fonts/Honey\ Crepes.ttf);
+  }
+  
+  :root {
+    --bg-main: #2972FC;
+    --bg-button: #fa9f34;
+    --bg-button-hover: #fdaa4a;
+    --bg-container: #f3be80;
+    --bg-border: #a86921;
+    --color-text: #fff;
+    --color-btn: #424242;
+    --color-btn-hover: #585757;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  html {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  body {
+    background-color: var(--bg-main);
+    font-family: Super Creamy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--color-text);
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .searchingPage {
+    background-color: var(--bg-container);
+    border: 5px solid var(--bg-border);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .searchingPage h1,
+  .searchingPage h2,
+  .searchingPage .submit {
+    color: var(--color-text);
+    border: 2px solid rgb(177, 137, 6);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .searchingPage h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    letter-spacing: .1em;
+  }
+  
+  .searchingPage h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .searchingPage .loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid var(--bg-button);
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto 40px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .searchingPage .submit {
+    cursor: pointer;
+    width: 220px;
+    height: 70px;
+    background-color: var(--bg-button);
+    border-radius: 15px;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .searchingPage .submit:hover {
+    background-color: var(--bg-button-hover);
+    transform: scale(1.1);
+  }
+  
