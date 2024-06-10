@@ -11,13 +11,18 @@
 
 <body>
   <div class="searchingPage">
-    <h1>QUEST</h1>
-    <h2>Procurando Partida...</h2>
+    <h1>Quest!</h1>
+    <h2>Procurando partida...</h2>
 
     <div class="loader"></div>
-
-    <a class="submit" href="./index.html">Cancelar</a>
+    <button class="cancelButton">Cancelar</button>
   </div>
+
+  <script>
+    document.querySelector('.cancelButton').addEventListener('click', function() {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 
 </html>
